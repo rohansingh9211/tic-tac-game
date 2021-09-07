@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="x_o.css">
+    <title>tic tac toe Game</title>
+</head>
+<body onload="startGame()">
+    <h1><font color="black" class="text">TIC-TAC-TOE</font></h1>
+    <div class="player">
+    player1: <input class="p1" type="text">
+    player2: <input class="p1" type="text"></div>
+
+    <div id="message" class="text1">RESULT</div>
+    <table class="shift">
+        <tr>
+            <td id="s1" class="square" onclick="nextMove(this);"></td>
+            <td id="s2" class="square" onclick="nextMove(this);"></td>
+            <td id="s3" class="square" onclick="nextMove(this);"></td>
+            
+        </tr>
+        <tr>
+            <td id="s4" class="square" onclick="nextMove(this);"></td>
+            <td id="s5" class="square" onclick="nextMove(this);"></td>
+            <td id="s6" class="square" onclick="nextMove(this);"></td>
+            
+        </tr>
+        <tr>
+            <td id="s7" class="square" onclick="nextMove(this);"></td>
+            <td id="s8" class="square" onclick="nextMove(this);"></td>
+            <td id="s9" class="square" onclick="nextMove(this);"></td>
+            
+        </tr>
+    </table>
+    <button type="button" onclick="startGame()" class="but">START NEW GAME</button>
+    <script type="text/javascript" src="x_o.js"></script>
+</body>
+</html>
